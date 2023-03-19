@@ -1,0 +1,44 @@
+.preformatted {
+  white-space: pre-wrap;
+}
+
+.edit-button {
+  background-color: #fca311;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.response-text {
+  /* Add these properties */
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+
+  /* Keep the existing properties */
+  padding: 20px;
+  text-align: left;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.save-button {
+  background-color: #48bb78;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #38a169;
+}

@@ -1,0 +1,12 @@
+.occasionDropdown {
+  margin-bottom: 1rem;
+}
+
+.occasionSelect {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  appearance: none;
+  background-color: #ffffff;
+}
