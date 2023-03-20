@@ -1,6 +1,5 @@
 import React from 'react';
 import LandingPage from './LandingPage';
-import { useState } from 'react';
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
