@@ -28,7 +28,6 @@ const LandingPage = () => {
     const timeoutRef = useRef(null);
 
     const [savedCards, setSavedCards] = useState([]);
-    const [hasSavedCards, setHasSavedCards] = useState(false);
 
 
     const openModal = () => {
@@ -106,11 +105,10 @@ const LandingPage = () => {
                 responseText,
             },
         ]);
-        setHasSavedCards(true);
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
             {showResponseCard && (
                 <ResponseCard
                     text={responseText}
@@ -225,7 +223,7 @@ const LandingPage = () => {
                     </div>
                 </Modal>
             </div>
-            {hasSavedCards && <SavedCards savedCards={savedCards} />}
+            {savedCards.length > 0 && <SavedCards savedCards={savedCards} />}
         </div>
     );
 };
