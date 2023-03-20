@@ -6,7 +6,7 @@ const GiftInput = ({ numOfGifts, gifts, setGifts }) => {
     for (let i = 0; i < numOfGifts; i++) {
       inputs.push(
         <div key={i} className="mt-2">
-          <label htmlFor={`gift${i + 1}`}>Gift {i + 1}:</label>
+          <label className="text-blue-600" htmlFor={`gift${i + 1}`}>Gift {i + 1}:</label>
           <input
             id={`gift${i + 1}`}
             type="text"

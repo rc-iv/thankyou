@@ -8,7 +8,7 @@ function OccasionDropdown({ onOccasionChange, babyName, setBabyName, giverName, 
     if (occasion === 'baby shower') {
       return (
         <div className="mt-2">
-          <label htmlFor="babyName">Baby's Name:</label>
+          <label className="text-blue-600" htmlFor="babyName">Baby's Name:</label>
           <input
             id="babyName"
             type="text"
@@ -27,7 +27,7 @@ function OccasionDropdown({ onOccasionChange, babyName, setBabyName, giverName, 
 
   return (
     <div className={styles.occasionDropdown}>
-      <label htmlFor="occasion">Choose an occasion:</label>
+      <label className="text-blue-600" htmlFor="occasion">Choose an occasion:</label>
       <select
         id="occasion"
         className={styles.occasionSelect}

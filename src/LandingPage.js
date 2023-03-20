@@ -147,7 +147,7 @@ const LandingPage = () => {
                             <div className="md:flex md:space-x-4">
                                 <div className="mb-4 md:w-1/2">
                                     <div className="mb-4">
-                                        <label htmlFor="userName" className="block mb-2">
+                                        <label htmlFor="userName" className="block mb-2 text-blue-600">
                                             Your Name:
                                         </label>
                                         <input
@@ -168,7 +168,7 @@ const LandingPage = () => {
                                     />
                                     {/* Giver Name input */}
                                     <div className="mb-4">
-                                        <label htmlFor="giverName" className="block mb-2">
+                                        <label htmlFor="giverName" className="block mb-2 text-blue-600">
                                             From:
                                         </label>
                                         <input
@@ -185,7 +185,7 @@ const LandingPage = () => {
                                 <div className="mb-4 md:w-1/2">
                                     {/* Number of gifts input */}
                                     <div className="mb-4">
-                                        <label htmlFor="numOfGifts" className="block mb-2">
+                                        <label htmlFor="numOfGifts" className="block mb-2 text-blue-600">
                                             Number of gifts:
                                         </label>
                                         <select
@@ -206,14 +206,14 @@ const LandingPage = () => {
                             </div>
                             {/* Additional Information input */}
                             <div className="mb-4">
-                                <label htmlFor="additionalInfo" className="block mb-2">
+                                <label htmlFor="additionalInfo" className="block mb-2 text-blue-600">
                                     Additional Information:
                                 </label>
                                 <textarea
                                     id="additionalInfo"
                                     value={additionalInfo}
                                     onChange={(e) => setAdditionalInfo(e.target.value)}
-                                    className="w-full px-3 py-2 border border-gray-300 rounded"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded text-black"
                                     placeholder="Enter any additional information to personalize the thank you"
                                     rows={3}
                                 />
