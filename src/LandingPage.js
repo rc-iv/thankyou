@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import Modal from 'react-modal';
 import GiftInput from '../src/components/GiftInput/GiftInput';
 import styles from './LandingPage.module.css';
@@ -28,6 +28,7 @@ const LandingPage = () => {
     const timeoutRef = useRef(null);
 
     const [savedCards, setSavedCards] = useState([]);
+    const [hasSavedCards, setHasSavedCards] = useState(false);
 
 
     const openModal = () => {
@@ -105,6 +106,7 @@ const LandingPage = () => {
                 responseText,
             },
         ]);
+        setHasSavedCards(true);
     };
 
     return (
@@ -223,7 +225,7 @@ const LandingPage = () => {
                     </div>
                 </Modal>
             </div>
-            <SavedCards savedCards={savedCards}/>
+            {hasSavedCards && <SavedCards savedCards={savedCards} />}
         </div>
     );
 };
