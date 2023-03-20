@@ -118,6 +118,7 @@ const LandingPage = () => {
                     showRetryButton={showRetryButton}
                     onRetry={generateThankYouCards}
                     saveCard={saveCard}
+                    cardType={occasion}
                 />
             )}
             <div className="w-full max-w-md p-8 space-y-4 bg-white rounded-lg shadow-xl">
