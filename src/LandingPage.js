@@ -108,7 +108,7 @@ const LandingPage = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-55">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 via-white to-blue-100">
             {showResponseCard && (
                 <ResponseCard
                     text={responseText}
@@ -229,9 +229,6 @@ const LandingPage = () => {
             </div>
             {savedCards.length > 0 && (
                 <div className="w-full max-w-md mt-8">
-                    <h2 className="text-2xl font-bold text-center text-blue-600 mb-4">
-                        Saved Cards
-                    </h2>
                     <SavedCards savedCards={savedCards}/>
                 </div>
             )}
