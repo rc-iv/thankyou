@@ -14,7 +14,7 @@ app.post('/api/generate-thank-you', async (req, res) => {
         const response = await axios.post(
             'https://api.openai.com/v1/chat/completions',
             {
-                model:"gpt-3.5-turbo-0301",
+                model:"gpt-3.5-turbo",
                 messages: [{role: "user", content: prompt}],
                 max_tokens: 150,
                 n: 1,
@@ -28,9 +28,8 @@ app.post('/api/generate-thank-you', async (req, res) => {
                 },
             }
         );
-        console.log(response);
         res.send(response.data.choices[0].message.content);
-        console.log(response.data.choices[0].message.content)
+
     } catch (error) {
         console.error('Error fetching data from OpenAI API:', error);
         res.status(500).send('Error fetching data from OpenAI API');

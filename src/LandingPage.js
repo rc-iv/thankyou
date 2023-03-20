@@ -70,7 +70,7 @@ const LandingPage = () => {
         console.log(prompt);
         try {
             const response = await axios.post(
-                'https://82wpkuvkeh.execute-api.us-east-1.amazonaws.com/',
+                'http://localhost:5000/api/generate-thank-you',
                 null,
                 {params: {prompt}}
             );
