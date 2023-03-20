@@ -24,7 +24,7 @@ const ResponseCard = ({text, loading, closeCard, openModal, showRetryButton, onR
                     </button>
                 ) : (
                     <p className={`${styles['response-text']} whitespace-pre-wrap`}>
-                        {text}
+                        {text.trim()}
                     </p>
                 )}
                 <div className="flex justify-center mt-4">

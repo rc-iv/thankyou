@@ -9,7 +9,7 @@ app.use(cors());
 
 app.post('/api/generate-thank-you', async (req, res) => {
     const prompt = req.query.prompt;
-
+    console.log(prompt);
     try {
         const response = await axios.post(
             'https://api.openai.com/v1/chat/completions',
@@ -24,7 +24,7 @@ app.post('/api/generate-thank-you', async (req, res) => {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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',
+                    'Authorization': 'Bearer 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',
                 },
             }
         );
