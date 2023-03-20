@@ -120,11 +120,15 @@ const LandingPage = () => {
                     saveCard={saveCard}
                 />
             )}
-            <div className="w-full max-w-md p-8 space-y-4 bg-white rounded shadow-lg">
-                <h1 className="text-3xl font-bold text-center">Thank You Card Generator</h1>
-                <p className="text-center">Easily create personalized thank you cards using AI.</p>
+            <div className="w-full max-w-md p-8 space-y-4 bg-white rounded-lg shadow-xl">
+                <h1 className="text-4xl font-bold text-center text-blue-600">
+                    Thank You Card Generator
+                </h1>
+                <p className="text-center text-gray-700">
+                    Easily create personalized thank you cards using AI.
+                </p>
                 <button
-                    className="w-full px-3 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
+                    className="w-full px-4 py-2 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700"
                     onClick={openModal}
                 >
                     Start Generating
@@ -223,7 +227,14 @@ const LandingPage = () => {
                     </div>
                 </Modal>
             </div>
-            {savedCards.length > 0 && <SavedCards savedCards={savedCards} />}
+            {savedCards.length > 0 && (
+                <div className="w-full max-w-md mt-8">
+                    <h2 className="text-2xl font-bold text-center text-blue-600 mb-4">
+                        Saved Cards
+                    </h2>
+                    <SavedCards savedCards={savedCards}/>
+                </div>
+            )}
         </div>
     );
 };
