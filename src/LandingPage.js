@@ -44,7 +44,7 @@ const LandingPage = () => {
 
     const generateThankYouCards = async () => {
         const giverName = document.getElementById('giverName').value;
-        let prompt = `Generate a thank you card for a ${occasion} to send to ${giverName} who has given ${numOfGifts} gift(s) to ${userName}:\n\n`;
+        let prompt = `Generate a thank you card for a ${occasion} to send to ${giverName} who has given ${numOfGifts} gift(s) to ${userName}. Do not include any details about the front of the card. Only include the thank you note text.\n\n`;
 
         closeModal();
         setShowResponseCard(true);
